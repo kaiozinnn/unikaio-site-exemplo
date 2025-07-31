@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Formulário de Contato</title>
+  <style>
+    /* Adicionando CSS direto no arquivo para melhor organização */
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+      text-align: center;
+      padding: 40px 0;
+      color: #333;
+    }
+    
+    header {
+      background-color: #1E3A8A;
+      color: white;
+      padding: 20px;
+    }
+
+    h1 {
+      margin: 0;
+      font-size: 36px;
+    }
+
+    p {
+      font-size: 18px;
+    }
+
+    form {
+      max-width: 600px;
+      margin: 0 auto;
+      background-color: white;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      border-left: 5px solid #1E3A8A;
+    }
+
+    form div {
+      margin-bottom: 15px;
+    }
+
+    form label {
+      display: block;
+      color: #333;
+    }
+
+    form input, form textarea {
+      width: 100%;
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+
+    form textarea {
+      resize: vertical; /* Permite que o usuário ajuste a altura da caixa de texto */
+    }
+
+    footer {
+      background-color: #1E3A8A;
+      padding: 10px;
+      color: white;
+    }
+
+    footer a {
+      color: white;
+      text-decoration: none;
+    }
+
+    footer a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Entre em Contato Comigo</h1>
+    <p>Preencha o formulário abaixo para enviar uma mensagem.</p>
+  </header>
+
+  <main>
+    <!-- Substitua o action do formulário com o link do Formspree -->
+    <form action="https://formspree.io/f/xanbbapd" method="POST">
+      <div>
+        <label for="nome">Nome:</label>
+        <input type="text" id="nome" name="nome" required>
+      </div>
+
+      <div>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+      </div>
+
+      <div>
+        <label for="assunto">Assunto:</label>
+        <input type="text" id="assunto" name="assunto" required>
+      </div>
+
+      <div>
+        <label for="mensagem">Mensagem:</label>
+        <textarea id="mensagem" name="mensagem" rows="4" required></textarea>
+      </div>
+
+      <div>
+        <button type="submit" style="background-color: #1E3A8A; color: white; padding: 10px 20px; border: none; border-radius: 5px;">Enviar</button>
+      </div>
+    </form>
+  </main>
+
+  <footer>
+    <p><a href="index.html">Voltar para o meu portfólio</a></p>
+  </footer>
+
+</body>
+</html>
